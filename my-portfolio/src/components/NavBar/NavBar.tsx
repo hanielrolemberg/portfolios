@@ -11,9 +11,9 @@ const StyledToolbar = styled(Toolbar)(({}) => ({
     <>
          <AppBar position="absolute">
             <StyledToolbar>
-            <MenuItem>About</MenuItem>
-            <MenuItem>Skills</MenuItem>
-            <MenuItem>Projects</MenuItem>
+                <MenuItem>About</MenuItem>
+                <MenuItem>Skills</MenuItem>
+                <MenuItem>Projects</MenuItem>
             </StyledToolbar>
          </AppBar>
     </>

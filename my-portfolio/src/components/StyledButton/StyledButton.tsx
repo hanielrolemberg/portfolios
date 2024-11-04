@@ -4,9 +4,10 @@ import { useTheme } from '@mui/material/styles'; // Certifique-se de importar co
 import { ReactNode } from "react";
 
 interface StyledButtonProps {
-    children: ReactNode;
+    children: ReactNode
+    OnClik: () => void
 }
-const StyledButton: React.FC<StyledButtonProps> = ({children}) => {
+const StyledButton: React.FC<StyledButtonProps> = ({children, OnClik}) => {
   const theme = useTheme(); // useTheme agora acessa o tema globalmente
 
   const StyledButton = styled("button")({
@@ -25,7 +26,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children}) => {
     },
   });
 
-  return <StyledButton>
+  return <StyledButton onClick={OnClik}>
     {children}
   </StyledButton>;
 };
